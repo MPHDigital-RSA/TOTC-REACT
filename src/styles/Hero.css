@@ -1,0 +1,36 @@
+.hero {
+    background-color: var(--color-green);
+    padding: 100px 0;
+}
+
+.hero .container {
+    display: flex;
+    gap: 50px;
+}
+
+.hero-left {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.hero-left h1 {
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.hero-left h1 span {
+    color: blue;
+}
+
+.hero-left p {
+    max-width: 70%;
+}
+
+.hero-right {
+    /* background-color: red; */
+    max-width: 600px;
+    width: 100%;
+}
