@@ -1,11 +1,12 @@
 .hero {
     background-color: var(--color-green);
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 
 .hero .container {
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 .hero-left {
@@ -22,7 +23,7 @@
 }
 
 .hero-left h1 span {
-    color: blue;
+    color: #2F327D;
 }
 
 .hero-left p {
@@ -33,4 +34,85 @@
     /* background-color: red; */
     max-width: 600px;
     width: 100%;
+    position: relative;
+}
+
+.hero-main-img {
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    display: block;
+    margin-inline: auto;
+}
+
+.hero-card-1 {
+    position: absolute;
+    top: 50px;
+    width: 180px;
+}
+
+.hero-card-2 {
+    position: absolute;
+    bottom: 90px;
+    width: 220px;
+}
+
+.hero-card-3 {
+    position: absolute;
+    bottom: 150px;
+    right: 40px;
+    width: 180px;
+}
+
+.hero-card-4 {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 100px;
+}
+
+@media screen and (width<980px) {
+    .hero .container {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .hero-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-left p {
+        margin-inline: auto;
+    }
+}
+
+@media screen and (width<680px) {
+    .hero .container {
+        gap: 20px;
+    }
+
+    .hero-card-3 {
+
+        right: 0px;
+        width: 150px;
+    }
+
+    .hero-card-1 {
+        width: 140px;
+    }
+
+    .hero-card-2 {
+        width: 180px;
+    }
+
+    .hero-left h1 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+    }
 }
